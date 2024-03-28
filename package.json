@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:href": "rm -rf docs/ && ng build --base-href ./ && mkdir docs && mv dist/gifs-app/browser/*.* docs/"
+    "build:href": "rm -rf docs/ && ng build --base-href ./ && mkdir docs && mkdir docs/assets && mv dist/gifs-app/browser/*.* docs/ && cp src/assets/*.* docs/assets"
   },
   "private": true,
   "dependencies": {
