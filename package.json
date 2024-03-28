@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:href": "rm -rf docs/ && ng build --base-href ./ && mkdir docs && mv dist/gifs-app/browser/*.* docs/"
   },
   "private": true,
   "dependencies": {

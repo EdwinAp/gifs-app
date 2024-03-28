@@ -1,0 +1,15 @@
+<div class="d-flex justiry-content-center">
+
+  <img [src]="url"
+    class="card-img-top animate__animated animate__heartBeat"
+    [alt]="alt"
+    (load)="onLoad()"
+    [ngStyle]="{display: hasLoaded ? '' : 'none'}">
+
+  <img
+    *ngIf="!hasLoaded"
+    src="assets/three-dots.svg"
+    height="35" width="35"
+    class="mt-3" alt="">
+
+</div>
